@@ -1,0 +1,187 @@
+/*-- -------------------------- -->
+<---      salmon-hero           -->
+<--- -------------------------- -*/
+#salmon-hero .Section_top .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#salmon-overview{
+
+    .image-group {
+        width: calc(730 / 16 * 1em);
+        height: calc(561 / 16 * 1em);
+
+        .cs-picture1 {
+            width: calc(730 / 16 * 1em);
+            height: calc(561 / 16 * 1em);
+        }
+    }
+}
+
+
+#salmon-location{
+
+    .image-group {
+        width: calc(598 / 16 * 1em);
+        height: calc(536 / 16 * 1em);
+
+        .cs-picture1 {
+            width: calc(598 / 16 * 1em);
+            height: calc(536 / 16 * 1em);
+        }
+    }
+}
+
+#salmon-bring{
+
+    .image-group {
+        width: calc(747 / 16 * 1em);
+        height: calc(690 / 16 * 1em);
+
+        .cs-picture1 {
+            width: calc(747 / 16 * 1em);
+            height: calc(690 / 16 * 1em);
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---        overview            -->
+<--- -------------------------- -*/
+
+#overview {
+
+    &.style01 {
+        padding: 60px 16px 0;
+
+        .cs-title {
+            margin: 0 0 10px;
+        }
+
+        .cs-text {
+            margin: 0 0 8px;
+        }
+
+        .image-group {
+            width: calc(708 / 16 * 1em);
+            height: calc(526 / 16 * 1em);
+
+            .cs-picture1 {
+                width: calc(708 / 16 * 1em);
+                height: calc(526 / 16 * 1em);
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .cs-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .text-content {
+        max-width: 700px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .image-group {
+        /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+        font-size: min(2vw, .8em);
+        width: calc(779 / 16 * 1em);
+        height: calc(542 / 16 * 1em);
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        .cs-picture {
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #overview {
+
+        &.style01 {
+            padding: 60px 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #overview {
+
+        &.style01 {
+            padding: 159px 0 58px;
+
+            .text-content {
+                max-width: 450px;
+                padding: 0;
+            }
+        }
+
+        .cs-container {
+            flex-direction: row;
+        }
+
+        .image-group {
+            /* scales the whole group based on the view width size and stop when that vales equals .8em, resets at desktop */
+            font-size: min(0.8vw, .8em);
+        }
+
+        .text-content {
+            max-width: 500px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #overview {
+
+        &.style01 {
+
+            .text-content {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    #overview {
+
+        &.style01 {
+
+            .cs-container {
+                justify-content: flex-start;
+                gap: 1.7rem;
+                align-items: flex-start;
+            }
+
+            .image-group {
+                width: calc(980 / 16 * 1em);
+                height: calc(732 / 16 * 1em);
+    
+                .cs-picture1 {
+                    width: calc(980 / 16 * 1em);
+                    height: calc(732 / 16 * 1em);
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
